@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/70b2979014.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000&family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="/dist/style.css" />
+</head>
+<body class="w-auto h-screen bg-slate-200">
+    <span class="pt-2"><a href="index.html" class="underline text-blue-700 bg-slate-400 p-2 rounded-3xl">Main page</a></span>
+    <div class="h-full w-[95%] md:w-[75%] lg:w-[50%] 2xl:w-[35%] mx-auto flex flex-col justify-center items-center">
+         <div class="w-[90%] flex flex-col mx-auto bg-slate-400 p-4 rounded">
+             <div class="p-4">
+                 <h1 class="text-3xl font-bold text-emerald-700">Sign up</h1>
+                 <p class="mt-2 text-sm">
+                     Create an account or <a href="../src/sign-in.html" class="signInLink underline text-fuchsia-700">sign in</a>
+                 </p>
+             </div>
+             <div class="px-4">
+                 <form class="form" action="">
+                     <div>
+                         <label for="name">Your name</label> <br>
+                         <input type="text" name="name" id="name" required>
+                     </div>
+                     <div>
+                         <label for="email">Email address</label> <br>
+                         <input type="email" name="email" id="email" required>
+                     </div>
+                     <div>
+                         <label for="number">Number</label> <br>
+                         <input type="tel" name="number" id="number" required>
+                     </div>
+                     <div>
+                         <label for="password">Password</label> <br>
+                         <input type="password" name="password" id="password" required>
+                     </div>
+                     <div>
+                         <label for="password">Confirm password</label> <br>
+                         <input type="password" name="password" id="password" required>
+                     </div>
+                         <label for="checkbox"></label>
+                         <input class="p-2" type="checkbox" name="checkbox" id="checkbox" required>
+                         <span class="text-[14px] md:text-[16px]">
+                             I agree to the terms and condition
+                         </span> <br>
+                         <label for="checkbox"></label>
+                         <input class="p-2" type="checkbox" name="checkbox" id="checkbox">
+                         <span class="text-[14px] md:text-[16px]">
+                             I don't want to receive advertisement or promotional messages in email
+                         </span>
+                     <div>
+                         <button id="signUp" role="submit" class="w-full block rounded-[40px] py-3 bg-fuchsia-700 text-slate-200">Sign up</button>
+                     </div>
+                 </form>
+             </div>
+             <div class="px-4 mt-1">
+                 <p class="text-center mt-2 text-[14px] md:text-[16px]">
+                     By signing up to create an account, you are accepting our <a href="#" class="underline">terms of service</a> and <a href="#" class="underline">privacy policy</a>
+                 </p>
+                 <h3 class="mt-2 text-center text-[14px] md:text-[16px]">
+                     Already have an account?
+                    <a href="../src/sign-in.html" class="signInLink underline text-fuchsia-700">Login here</a>
+                 </h3>
+             </div>
+         </div>
+    </div> 
+
+
+</body>
+</html>

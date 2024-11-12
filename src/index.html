@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo e-commerce</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/70b2979014.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="/dist/style.css" />
+  </head>
+  <body class="h-auto w-auto">
+    <!-- Header section -->
+    <header class=" fixed lg:h-[60px] w-screen  lg:fixed top-0 z-[100]">
+      
+      <nav>
+        <div class="flex justify-between w-full lg:hidden h-10 bg-slate-700 lg:bg-current">
+          <div class="gap-2 bg-slate-600 text-gray-200">
+            <i class="py-3 px-8 h-full bg-slate-500 fa-solid fa-magnifying-glass"></i>
+            <i class="p-3 h-full fa-solid fa-cart-shopping"></i>
+
+          </div>
+          <div class="cursor-pointer py-2 px-4 mr-2">
+            <i
+              id="menuBar"
+              class="text-slate-300 text-2xl fa-solid fa-bars"
+            ></i>
+            <i
+              id="closeMenu"
+              class="text-slate-300 text-2xl hidden fa-solid fa-xmark"
+            ></i>
+          </div>
+        </div>
+        
+        <div id="menuContainer" class="pt-2 lg:pt-0 hidden lg:h-[60px] bg-slate-600 h-full lg:flex lg:justify-around">
+        
+          <div class="hidden lg:w-[16.6%] 2xl:w-[10%] lg:flex flex-row justify-center items-center bg-slate-500 lg:pl-8 gap-2 lg:gap-4 text-gray-200">
+            <i class="p-5 h-full lg:pl-8 fa-solid fa-magnifying-glass"></i>
+            <i class="p-5 h-full fa-solid fa-cart-shopping"></i>
+
+          </div>
+          <ul class="w-full flex flex-col items-center justify-between lg:flex-row-reverse lg:justify-normal lg:p-0 lg:gap-6 lg:mr-8 lg:w-10/12 lg:mx-auto lg:h-full">
+            <li class="flex gap-2 bg-green-800 items-center lg:p-4">
+              <i
+                class="text-center text-gray-100 py-1 fa-solid fa-user md:py-0"
+              ></i>
+              <a href=""> Profile </a>
+            </li>
+           
+            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
+              <a href=""> Wishlist </a>
+            </li>
+            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
+              <a href=""> Product </a>
+            </li>
+            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
+              <a href=""> Contact </a>
+            </li>
+            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
+              <a href="../src/sign-in.html"> Sign-in </a>
+            </li>
+
+            <li
+              class="w-screen bg-blue-600 lg:h-full text-center rounded-none lg:w-auto lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
+              <a href="../src/sign-up.html" class="p-2"> Sign-up </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="lg:mt-[60px] mt-[68px]">
+      
+      <div class="relative lg:position-static lg:grid grid-cols-12 2xl:grid 2xl:grid-cols-10 grid-rows-[auto auto auto auto]">
+        <div id="searchBar" class="fixed top-[40px] w-full lg:top-[60px] hidden z-[10] lg:col-start-1 lg:-col-end-1 bg-gray-100">
+          <input
+            type="text"
+            placeholder="Search..."
+            class="w-full p-2 border border-gray-300 rounded outline-none"
+          />
+          </div>
+       
+        <!-- Main header 2 -->
+        <div class="gap-4 py-[1px] flex flex-col lg:flex-row lg:w-10/12 lg:mt-2 lg:p-8 lg:mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1">
+          <div class="w-full relative lg:basis-3/6">
+            <img id="headerImage" src="../image/first header.jpg" alt="header" srcset=".image/first header-small.jpg 600w, .image/first header-large.jpg 1200w" sizes="(max-width: 600px) 100vw, 50vw">
+
+            <span class="absolute left-[50%] translate-x-[-50%] -bottom-5 bg-amber-200 p-2 rounded-sm">
+              <i id="leftMove" class="cursor-pointer px-2 fa-solid fa-arrow-left"></i>
+              <i id="rightMove" class="cursor-pointer px-2 fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+          <div class="lg:basis-3/6 mt-6">
+            <h2 class="text-center text-xl">We are here to serve you</h2>
+            <h3 class="text-center text-neutral-500">
+              Search your favourite execories or foods
+            </h3>
+            <p class="p-4">
+              Welcome to our e-commerce store, your one-stop destination for
+              top-quality products at unbeatable prices. Enjoy a seamless
+              shopping experience with a wide selection, fast shipping, and
+              exceptional customer service. Elevate your lifestyle with the best
+              in fashion, tech, home essentials, and more!
+            </p>
+            <q class="p-4 text-center block"> Your happiness is our reward. </q>
+            <div class="flex p-4 gap-6 text-sm">
+              <button class="p-2 bg-cyan-600 rounded-sm">
+                Policy
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+              <button class="p-2 bg-cyan-600 rounded-sm">
+                User requirements
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- SideMenu -->
+        <div class="w-full fixed top-2 lg:bg-slate-600 text-slate-300 lg:w-[16.6%] 2xl:w-[10%] my-8 lg:fixed lg:top-[60px] lg:left-0 lg:row-start-1 lg:-row-end-1 lg:col-start-0 lg:col-end-3 2xl:col-start-1 2xl:col-end-2 lg:my-0 lg:h-screen">
+          <div class="bg-neutral-700 text-center w-full lg:w-[100%] lg:bg-neutral-700">
+            <button id="sideMenuBar" class="w-full bg-green-400 lg:w-full p-2 lg:p-4 lg:bg-neutral-700 text-gray-100">
+              Menu
+              <i id="arrowIcon" class="lg:hidden rotate-90 fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+          <div id="sideMenu" class="hidden lg:block transition-all bg-slate-600 lg:bg-inherit">
+            <ul class="w-full flex flex-row lg:flex-col transition-all duration-700 flex-wrap lg:justify-center gap-3 justify-center lg:flex-nowrap lg:mt-4">
+              <li>
+                <button
+                  id="sideMenuBtn"
+                  class="w-full text-left transition-all duration-300 lg:hover:bg-slate-700 p-2">
+                  Catagory
+                  <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
+                </button>
+                <ul id="sideMenuItem" class="hidden">
+                  <li>
+                    <button>Foods</button>
+                  </li>
+                  <li>
+                    <button>Accessories</button>
+                  </li>
+                  <li>
+                    <button>Clothes</button>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button id="sideMenuBtn" class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  User favourite
+                  <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
+                </button>
+                <ul id="sideMenuItem" class="hidden">
+                  <li>
+                    <button>Foods</button>
+                  </li>
+                  <li>
+                    <button>Accessories</button>
+                  </li>
+                  <li>
+                    <button>Clothes</button>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button
+                  id="sideMenuBtn"
+                  class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  Most sale
+                  <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
+                </button>
+                <ul id="sideMenuItem" class="hidden">
+                  <li>
+                    <button>Foods</button>
+                  </li>
+                  <li>
+                    <button>Accessories</button>
+                  </li>
+                  <li>
+                    <button>Clothes</button>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button id="sideMenuBtn" class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  New product
+                  <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
+                </button>
+                <ul id="sideMenuItem" class="hidden">
+                  <li>
+                    <button>Foods</button>
+                  </li>
+                  <li>
+                    <button>Accessories</button>
+                  </li>
+                  <li>
+                    <button>Clothes</button>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  Top product
+                </button>
+              </li>
+              <li>
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  Wishlist
+                </button>
+              </li>
+              <li>
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  Cart list
+                </button>
+              </li>
+              <li>
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  My order
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Product section -->
+        <div class="w-full md:w-[95%] lg:w-full px-2 md:p-4 mt-4 md:mt-[36px] lg:mt-[52px] lg:col-start-3 2xl:col-start-2 lg:-col-end-1 mx-auto">
+            <div class="flex flex-row justify-center items-center flex-wrap gap-2">
+                <div class="product-div">
+                    <div>
+                        <img src="../image/iphone-1.jpg" alt="iphone" loading="lazy">
+                    </div>
+                    <div class="product-details">
+                        <h2>
+                          Iphone Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, ullam illum velit excepturi asperiores perspiciatis cumque nam illo suscipit temporibus.
+                        </h2>
+                        <p id="price">
+                         <span>Price:</span> $999
+                        </p>
+                        <h4>
+                          <i class="fa-solid fa-star"></i>
+                          <span>3.1</span>
+                        </h4>
+                    </div>
+                    
+                </div>
+
+                <div class="product-div">
+                    <div>
+                        <img src="../image/iphone-2.jpg" alt="iphone" loading="lazy">
+                    </div>
+                    <div class="product-details">
+                        <h2>
+                          Iphone 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos atque eius iure vero consequatur praesentium sit nam, maxime iusto.
+                        </h2>
+                        <p class="price">
+                         <span>Price:</span> $659
+                        </p>
+                        <h4>
+                          <i class="fa-solid fa-star"></i>
+                          <span>3.1</span>
+                        </h4>
+                    </div>
+                    
+                </div>
+
+                <div class="product-div">
+                    <div>
+                        <img src="../image/iphone-3.jpg" alt="iphone" loading="lazy">
+                    </div>
+                    <div class="product-details">
+                        <h2>
+                          Iphone Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam qui optio quae omnis tenetur molestiae accusantium eius voluptate, distinctio perspiciatis!
+                        </h2>
+                        <p class="price">
+                         <span>Price:</span> $899
+                        </p>
+                        <h4>
+                          <i class="fa-solid fa-star"></i>
+                          <span>3.1</span>
+                        </h4>
+                    </div>
+                    
+                </div>
+
+                <div class="product-div">
+                    <div>
+                        <img src="../image/iphone-4.jpg" alt="iphone" loading="lazy">
+                    </div>
+                    <div class="product-details">
+                        <h2>
+                          Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit animi in mollitia. Quis magnam praesentium suscipit perspiciatis eum laboriosam.
+                        </h2>
+                        <p class="price">
+                         <span>Price:</span> $599
+                        </p>
+                        <h4>
+                          <i class="fa-solid fa-star"></i>
+                          <span>3.1</span>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="product-div">
+                    <div>
+                        <img src="../image/ipad.jpg" alt="ipad" loading="lazy">
+                    </div>
+                    <div class="product-details">
+                        <h2>
+                          Ipad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit quis et ratione odio cupiditate ea earum laudantium recusandae alias?
+                        </h2>
+                        <p class="price">
+                         <span>Price:</span> $699
+                        </p>
+                        <h4>
+                          <i class="fa-solid fa-star"></i>
+                          <span>3.1</span>
+                        </h4>
+                    </div>
+                </div>
+
+                <div class="product-div">
+                    <div>
+                        <img src="../image/ipad-2.jpg" alt="ipad" loading="lazy">
+                    </div>
+                    <div class="product-details">
+                        <h2>
+                          Ipad 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia iste porro veniam delectus inventore vel labore neque repudiandae rem eveniet.
+                        </h2>
+                        <p class="price">
+                         <span>Price:</span> $499
+                        </p>
+                        <h4>
+                          <i class="fa-solid fa-star"></i>
+                          <span>3.1</span>
+                        </h4>
+                    </div>
+                  </div>
+
+                  <div class="product-div">
+                      <div>
+                          <img src="../image/ipad-3.jpg" alt="ipad" loading="lazy">
+                      </div>
+                      <div class="product-details">
+                          <h2>
+                            Ipad 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum earum ut, hic iste optio! Dignissimos reiciendis soluta est debitis!
+                          </h2>
+                          <p class="price">
+                           <span>Price:</span> $799
+                          </p>
+                          <h4>
+                            <i class="fa-solid fa-star"></i>
+                            <span>3.1</span>
+                          </h4>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </main>
+
+    <script src="../src/js/script.js" defer></script>
+  </body>
+</html>
