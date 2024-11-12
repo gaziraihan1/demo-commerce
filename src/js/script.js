@@ -7,10 +7,10 @@ let menuContainer = document.querySelector("#menuContainer");
 //For the header image slider
 
 let headerImages = [
-  { src: '../image/first header.jpg', srcset: '../image/first header.jpg 800w, ../image/first header-large.jpg 1200w' },
-  { src: '../image/foods header.jpg', srcset: '../image/foods header.jpg 800w, ../image/foods header-large.jpg 1200w' },
-  { src: '../image/iphone header.jpg', srcset: '../image/iphone header.jpg 800w, ../image/iphone header-large.jpg 1200w' },
-  { src: '../image/pad header.jpg', srcset: '../image/pad header.jpg 800w, ../image/pad header-large.jpg 1200w' }
+  { src: './image/first header.jpg', srcset: './image/first header.jpg 800w, ./image/first header-large.jpg 1200w' },
+  { src: './image/foods header.jpg', srcset: './image/foods header.jpg 800w, ./image/foods header-large.jpg 1200w' },
+  { src: './image/iphone header.jpg', srcset: './image/iphone header.jpg 800w, ./image/iphone header-large.jpg 1200w' },
+  { src: './image/pad header.jpg', srcset: './image/pad header.jpg 800w, ./image/pad header-large.jpg 1200w' }
 ];
 let count = 0;
 let imageFolder = document.querySelector("#headerImage");
