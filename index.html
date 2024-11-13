@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <script src="https://kit.fontawesome.com/70b2979014.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+ 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faculty+Glyphic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="dist/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/style.css" />
   </head>
   <body class="h-auto w-auto">
     <!-- Header section -->
@@ -39,7 +39,7 @@
         
         <div id="menuContainer" class="pt-2 lg:pt-0 hidden lg:h-[60px] bg-slate-600 h-full lg:flex lg:justify-around">
         
-          <div class="hidden lg:w-[16.6%] 2xl:w-[10%] lg:flex flex-row justify-center items-center bg-slate-500 lg:pl-8 gap-2 lg:gap-4 text-gray-200">
+          <div class="hidden lg:w-[16.6%] 2xl:w-[10%] lg:flex flex-row justify-center items-center bg-slate-500 gap-2 lg:gap-2 text-gray-200">
             <i class="p-5 h-full lg:pl-8 fa-solid fa-magnifying-glass"></i>
             <i class="p-5 h-full fa-solid fa-cart-shopping"></i>
 
@@ -62,12 +62,12 @@
               <a href=""> Contact </a>
             </li>
             <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href="sign-in.html"> Sign-in </a>
+              <a href="sign-in.html" target="_blank"> Sign-in </a>
             </li>
 
             <li
               class="w-screen bg-blue-600 lg:h-full text-center rounded-none lg:w-auto lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href="sign-up.html" class="p-2"> Sign-up </a>
+              <a href="sign-up.html" target="_blank" class="p-2"> Sign-up </a>
             </li>
           </ul>
         </div>
@@ -85,7 +85,7 @@
           </div>
        
         <!-- Main header 2 -->
-        <div class="gap-4 py-[1px] flex flex-col lg:flex-row lg:w-10/12 lg:mt-2 lg:p-8 lg:mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1">
+        <div class="gap-4 py-[1px] flex flex-col lg:items-center lg:h-[65vh] lg:flex-row lg:w-10/12 lg:mt-2 lg:p-8 lg:mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1">
           <div class="w-full relative lg:basis-3/6">
             <img id="headerImage" src="./image/first header.jpg" alt="header" srcset="image/first header-small.jpg 600w, image/first header-large.jpg 1200w" sizes="(max-width: 600px) 100vw, 50vw">
 
@@ -121,9 +121,9 @@
         </div>
 
         <!-- SideMenu -->
-        <div class="w-full fixed top-2 lg:bg-slate-600 text-slate-300 lg:w-[16.6%] 2xl:w-[10%] my-8 lg:fixed lg:top-[60px] lg:left-0 lg:row-start-1 lg:-row-end-1 lg:col-start-0 lg:col-end-3 2xl:col-start-1 2xl:col-end-2 lg:my-0 lg:h-screen">
-          <div class="bg-neutral-700 text-center w-full lg:w-[100%] lg:bg-neutral-700">
-            <button id="sideMenuBar" class="w-full bg-green-400 lg:w-full p-2 lg:p-4 lg:bg-neutral-700 text-gray-100">
+        <div class="w-full fixed top-2 text-slate-200 lg:border-r-[1px] lg:bg-slate-200 lg:border-gray-300 lg:text-slate-700 lg:w-[16.6%] 2xl:w-[10%] my-8 lg:fixed lg:top-[60px] lg:left-0 lg:row-start-1 lg:-row-end-1 lg:col-start-0 lg:col-end-3 2xl:col-start-1 2xl:col-end-2 lg:my-0 lg:h-screen">
+          <div class="text-center w-full lg:w-[100%]">
+            <button id="sideMenuBar" class="w-full bg-green-600 lg:rounded text-yellow-50 lg:w-full p-2 lg:p-4 lg:bg-gray-100 lg:text-gray-600">
               Menu
               <i id="arrowIcon" class="lg:hidden rotate-90 fa-solid fa-arrow-right"></i>
             </button>
@@ -133,7 +133,7 @@
               <li>
                 <button
                   id="sideMenuBtn"
-                  class="w-full text-left transition-all duration-300 lg:hover:bg-slate-700 p-2">
+                  class="w-full text-left transition-all duration-300 lg:hover:bg-slate-300 p-2">
                   Catagory
                   <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
                 </button>
@@ -150,7 +150,7 @@
                 </ul>
               </li>
               <li>
-                <button id="sideMenuBtn" class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                <button id="sideMenuBtn" class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   User favourite
                   <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
                 </button>
@@ -169,7 +169,7 @@
               <li>
                 <button
                   id="sideMenuBtn"
-                  class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                  class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   Most sale
                   <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
                 </button>
@@ -186,7 +186,7 @@
                 </ul>
               </li>
               <li>
-                <button id="sideMenuBtn" class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                <button id="sideMenuBtn" class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   New product
                   <i id="sideArrow" class="rotate-90 fa-solid fa-arrow-right"></i>
                 </button>
@@ -203,22 +203,22 @@
                 </ul>
               </li>
               <li>
-                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   Top product
                 </button>
               </li>
               <li>
-                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   Wishlist
                 </button>
               </li>
               <li>
-                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   Cart list
                 </button>
               </li>
               <li>
-                <button class="text-left transition-all duration-300 lg:hover:bg-slate-700 p-2 w-full">
+                <button class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full">
                   My order
                 </button>
               </li>
@@ -228,7 +228,38 @@
 
         <!-- Product section -->
         <div class="w-full md:w-[95%] lg:w-full px-2 md:p-4 mt-4 md:mt-[36px] lg:mt-[52px] lg:col-start-3 2xl:col-start-2 lg:-col-end-1 mx-auto">
-            <div class="flex flex-row justify-center items-center flex-wrap gap-2">
+          <div class="flex flex-col gap-y-6 md:gap-x-2 p-2 justify-center items-center md:flex-row md:justify-around bg-gradient-to-r from-blue-700 to-blue-600 md:p-4 h-auto rounded">
+                <div class="text-center profile p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded flex flex-col ">
+                  <h1 class="text-base lg:text-xl 2xl:text-2xl text-red-900">
+                    Total Order received
+                  </h1>
+                  <p class="text-green-950">
+                    + 245
+                  </p>
+                </div>
+                <div class="profile text-center p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded">
+                  <h1 class="text-base lg:text-xl 2xl:text-2xl text-red-900">
+                    Total order completed
+                  </h1>
+                  <p class="text-green-950">
+                    + 244
+                  </p>
+                </div>
+                <div class="profile text-center p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded">
+                  <h1 class="text-base lg:text-xl 2xl:text-2xl text-red-900">
+                    Total reviews received
+                  </h1>
+                  <p class="text-green-950">
+                    + 218
+                  </p>
+                </div>
+          </div>
+          <div class="profile text-center mt-20 text-2xl text-emerald-900">
+            <h2>
+              Most searched products
+            </h2>
+          </div>
+            <div class="h-auto flex flex-row justify-center items-center flex-wrap gap-2 mt-8">
                 <div class="product-div">
                     <div>
                         <img src="./image/iphone-1.jpg" alt="iphone" loading="lazy">
@@ -237,12 +268,15 @@
                         <h2>
                           Iphone Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, ullam illum velit excepturi asperiores perspiciatis cumque nam illo suscipit temporibus.
                         </h2>
-                        <p id="price">
-                         <span>Price:</span> $999
-                        </p>
+                        <div class="flex flex-row justify-between items-center mt-1">
+                          <p id="price">
+                           <span>Price:</span> $999
+                          </p>
+                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                        </div>
                         <h4>
                           <i class="fa-solid fa-star"></i>
-                          <span>3.1</span>
+                          <span>4.9</span>
                         </h4>
                     </div>
                     
@@ -256,12 +290,15 @@
                         <h2>
                           Iphone 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos atque eius iure vero consequatur praesentium sit nam, maxime iusto.
                         </h2>
-                        <p class="price">
-                         <span>Price:</span> $659
-                        </p>
+                        <div class="flex flex-row justify-between items-center mt-1">
+                          <p id="price">
+                           <span>Price:</span> $999
+                          </p>
+                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                        </div>
                         <h4>
                           <i class="fa-solid fa-star"></i>
-                          <span>3.1</span>
+                          <span>3.9</span>
                         </h4>
                     </div>
                     
@@ -275,12 +312,15 @@
                         <h2>
                           Iphone Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam qui optio quae omnis tenetur molestiae accusantium eius voluptate, distinctio perspiciatis!
                         </h2>
-                        <p class="price">
-                         <span>Price:</span> $899
-                        </p>
+                        <div class="flex flex-row justify-between items-center mt-1">
+                          <p id="price">
+                           <span>Price:</span> $999
+                          </p>
+                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                        </div>
                         <h4>
                           <i class="fa-solid fa-star"></i>
-                          <span>3.1</span>
+                          <span>4.7</span>
                         </h4>
                     </div>
                     
@@ -294,12 +334,15 @@
                         <h2>
                           Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit animi in mollitia. Quis magnam praesentium suscipit perspiciatis eum laboriosam.
                         </h2>
-                        <p class="price">
-                         <span>Price:</span> $599
-                        </p>
+                        <div class="flex flex-row justify-between items-center mt-1">
+                          <p id="price">
+                           <span>Price:</span> $999
+                          </p>
+                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                        </div>
                         <h4>
                           <i class="fa-solid fa-star"></i>
-                          <span>3.1</span>
+                          <span>4.5</span>
                         </h4>
                     </div>
                 </div>
@@ -312,12 +355,15 @@
                         <h2>
                           Ipad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit quis et ratione odio cupiditate ea earum laudantium recusandae alias?
                         </h2>
-                        <p class="price">
-                         <span>Price:</span> $699
-                        </p>
+                        <div class="flex flex-row justify-between items-center mt-1">
+                          <p id="price">
+                           <span>Price:</span> $999
+                          </p>
+                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                        </div>
                         <h4>
                           <i class="fa-solid fa-star"></i>
-                          <span>3.1</span>
+                          <span>3.9</span>
                         </h4>
                     </div>
                 </div>
@@ -330,12 +376,15 @@
                         <h2>
                           Ipad 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia iste porro veniam delectus inventore vel labore neque repudiandae rem eveniet.
                         </h2>
-                        <p class="price">
-                         <span>Price:</span> $499
-                        </p>
+                        <div class="flex flex-row justify-between items-center mt-1">
+                          <p id="price">
+                           <span>Price:</span> $999
+                          </p>
+                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                        </div>
                         <h4>
                           <i class="fa-solid fa-star"></i>
-                          <span>3.1</span>
+                          <span>4.1</span>
                         </h4>
                     </div>
                   </div>
@@ -348,12 +397,15 @@
                           <h2>
                             Ipad 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum earum ut, hic iste optio! Dignissimos reiciendis soluta est debitis!
                           </h2>
-                          <p class="price">
-                           <span>Price:</span> $799
-                          </p>
+                          <div class="flex flex-row justify-between items-center mt-1">
+                            <p id="price">
+                             <span>Price:</span> $999
+                            </p>
+                            <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
+                          </div>
                           <h4>
                             <i class="fa-solid fa-star"></i>
-                            <span>3.1</span>
+                            <span>3.5</span>
                           </h4>
                       </div>
                   </div>
