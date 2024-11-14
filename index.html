@@ -20,9 +20,9 @@
       
       <nav>
         <div class="flex justify-between w-full lg:hidden h-10 bg-slate-700 lg:bg-current">
-          <div class="gap-2 bg-slate-600 text-gray-200">
+          <div class="gap-2 bg-slate-200 text-gray-200">
             <i class="py-3 px-8 h-full bg-slate-500 fa-solid fa-magnifying-glass"></i>
-            <i class="p-3 h-full fa-solid fa-cart-shopping"></i>
+            <i class="p-3 h-full text-gray-900 fa-solid fa-cart-shopping"></i>
 
           </div>
           <div class="cursor-pointer py-2 px-4 mr-2">
@@ -37,43 +37,41 @@
           </div>
         </div>
         
-        <div id="menuContainer" class="pt-2 lg:pt-0 hidden lg:h-[60px] bg-slate-600 h-full lg:flex lg:justify-around">
+        <div id="menuContainer" class="pt-2 lg:pt-0 hidden lg:h-[60px] bg-slate-400 lg:bg-slate-200 h-full lg:flex lg:justify-around">
         
-          <div class="hidden lg:w-[16.6%] 2xl:w-[10%] lg:flex flex-row justify-center items-center bg-slate-500 gap-2 lg:gap-2 text-gray-200">
+          <div class="hidden lg:w-[16.6%] 2xl:w-[10%] lg:flex flex-row justify-center items-center bg-slate-200 gap-2 lg:gap-2 text-gray-700">
             <i class="p-5 h-full lg:pl-8 fa-solid fa-magnifying-glass"></i>
             <i class="p-5 h-full fa-solid fa-cart-shopping"></i>
 
           </div>
-          <ul class="w-full flex flex-col items-center justify-between lg:flex-row-reverse lg:justify-normal lg:p-0 lg:gap-6 lg:mr-8 lg:w-10/12 lg:mx-auto lg:h-full">
+          <ul class="w-full flex flex-col items-center justify-between lg:flex-row-reverse lg:justify-normal lg:p-0 lg:gap-6 lg:mr-8 lg:w-10/12 lg:mx-auto lg:h-full lg:text-xl">
             <li class="flex gap-2 bg-green-800 items-center lg:p-4">
-              <i
-                class="text-center text-gray-100 py-1 fa-solid fa-user md:py-0"
-              ></i>
-              <a href=""> Profile </a>
+              <i class="text-center text-gray-100 py-1 fa-solid fa-user md:py-0"></i>
+              <a href="" class="font-semibold text-white"> Profile </a>
             </li>
            
-            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href=""> Wishlist </a>
+            <li class="lg:h-full lg:p-4">
+              <a href="" class="font-semibold"> Wishlist </a>
             </li>
-            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href=""> Product </a>
+            <li class="lg:h-full lg:p-4">
+              <a href="" class="font-semibold"> Product </a>
             </li>
-            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href=""> Contact </a>
+            <li class="lg:h-full lg:p-4">
+              <a href="" class="font-semibold"> Contact </a>
             </li>
-            <li class="lg:h-full lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href="sign-in.html" target="_blank"> Sign-in </a>
+            <li class="lg:h-full lg:p-4">
+              <a href="sign-in.html" target="_blank" class="font-semibold"> Sign-in </a>
             </li>
 
             <li
-              class="w-screen bg-blue-600 lg:h-full text-center rounded-none lg:w-auto lg:p-4 md:hover:bg-slate-500 transition md:rounded-none">
-              <a href="sign-up.html" target="_blank" class="p-2"> Sign-up </a>
+              class="w-screen lg:h-full text-center rounded-none lg:w-auto lg:p-4">
+              <a href="sign-up.html" target="_blank" class="font-bold"> Sign-up </a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <main class="lg:mt-[60px] mt-[68px]">
+    <main class="lg:mt-[60px] mt-[76px] bg-red-50">
       
       <div class="relative lg:position-static lg:grid grid-cols-12 2xl:grid 2xl:grid-cols-10 grid-rows-[auto auto auto auto]">
         <div id="searchBar" class="fixed top-[40px] w-full lg:top-[60px] hidden z-[10] lg:col-start-1 lg:-col-end-1 bg-gray-100">
@@ -85,7 +83,7 @@
           </div>
        
         <!-- Main header 2 -->
-        <div class="gap-4 py-[1px] flex flex-col lg:items-center lg:h-[65vh] lg:flex-row lg:w-10/12 lg:mt-2 lg:p-8 lg:mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1">
+        <div class="gap-4 py-[1px] w-[95%] flex flex-col lg:items-center lg:h-[65vh] lg:flex-row lg:w-10/12 lg:mt-2 lg:p-8 mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1">
           <div class="w-full relative lg:basis-3/6">
             <img id="headerImage" src="./image/first header.jpg" alt="header" srcset="image/first header-small.jpg 600w, image/first header-large.jpg 1200w" sizes="(max-width: 600px) 100vw, 50vw">
 
@@ -227,26 +225,31 @@
         </div>
 
         <!-- Product section -->
-        <div class="w-full md:w-[95%] lg:w-full px-2 md:p-4 mt-4 md:mt-[36px] lg:mt-[52px] lg:col-start-3 2xl:col-start-2 lg:-col-end-1 mx-auto">
-          <div class="flex flex-col gap-y-6 md:gap-x-2 p-2 justify-center items-center md:flex-row md:justify-around bg-gradient-to-r from-blue-700 to-blue-600 md:p-4 h-auto rounded">
-                <div class="text-center profile p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded flex flex-col ">
-                  <h1 class="text-base lg:text-xl 2xl:text-2xl text-red-900">
+        <div class="w-full md:w-[95%] lg:w-full px-2 md:p-4 mt-6 md:mt-[36px] lg:mt-[52px] lg:col-start-3 2xl:col-start-2 lg:-col-end-1 mx-auto">
+          <div class="flex flex-col gap-y-6 md:gap-x-2 p-2 justify-center md:flex-wrap items-center md:flex-row md:justify-around bg-gradient-to-r from-blue-700 to-blue-600 md:p-4 h-auto rounded">
+            <div class="basis-full text-center">
+              <h1 class="text-2xl lg:text-4xl text-white">
+                Shop Overview <br> <sup class="text-[10px] font-bold text-red-950">Remember all is dummy data</sup>
+              </h1>
+            </div>
+                <div class="md:basis-[30%] text-center profile p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded flex flex-col ">
+                  <h1 class="text-base lg:text-lg 2xl:text-2xl text-white">
                     Total Order received
                   </h1>
                   <p class="text-green-950">
                     + 245
                   </p>
                 </div>
-                <div class="profile text-center p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded">
-                  <h1 class="text-base lg:text-xl 2xl:text-2xl text-red-900">
+                <div class="md:basis-[30%] profile text-center p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded">
+                  <h1 class="text-base lg:text-lg 2xl:text-2xl text-white">
                     Total order completed
                   </h1>
                   <p class="text-green-950">
                     + 244
                   </p>
                 </div>
-                <div class="profile text-center p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded">
-                  <h1 class="text-base lg:text-xl 2xl:text-2xl text-red-900">
+                <div class="md:basis-[30%] profile text-center p-2 bg-gradient-to-r from-blue-600 to-blue-700 md:p-4 lg:p-6 w-full lg:w-[50%] lg:mx-auto rounded">
+                  <h1 class="text-base lg:text-lg 2xl:text-2xl text-white">
                     Total reviews received
                   </h1>
                   <p class="text-green-950">
@@ -254,168 +257,157 @@
                   </p>
                 </div>
           </div>
-          <div class="profile text-center mt-20 text-2xl text-emerald-900">
+          <div class="profile text-center mt-20 text-2xl text-emerald-800">
             <h2>
               Most searched products
-            </h2>
+            </h2> <br>
+            <sup class="text-[10px] font-bold text-red-950">Remember all is dummy data</sup>
           </div>
-            <div class="h-auto flex flex-row justify-center items-center flex-wrap gap-2 mt-8">
-                <div class="product-div">
-                    <div>
-                        <img src="./image/iphone-1.jpg" alt="iphone" loading="lazy">
-                    </div>
-                    <div class="product-details">
-                        <h2>
-                          Iphone Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, ullam illum velit excepturi asperiores perspiciatis cumque nam illo suscipit temporibus.
-                        </h2>
-                        <div class="flex flex-row justify-between items-center mt-1">
-                          <p id="price">
-                           <span>Price:</span> $999
-                          </p>
-                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                        </div>
-                        <h4>
-                          <i class="fa-solid fa-star"></i>
-                          <span>4.9</span>
-                        </h4>
-                    </div>
-                    
-                </div>
+          <div id="content-container" class="h-auto flex flex-row justify-center items-center flex-wrap gap-4 mt-8">
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione fuga consectetur magnam voluptate assumenda?" data-price="$1" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-                <div class="product-div">
-                    <div>
-                        <img src="./image/iphone-2.jpg" alt="iphone" loading="lazy">
-                    </div>
-                    <div class="product-details">
-                        <h2>
-                          Iphone 6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quos atque eius iure vero consequatur praesentium sit nam, maxime iusto.
-                        </h2>
-                        <div class="flex flex-row justify-between items-center mt-1">
-                          <p id="price">
-                           <span>Price:</span> $999
-                          </p>
-                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                        </div>
-                        <h4>
-                          <i class="fa-solid fa-star"></i>
-                          <span>3.9</span>
-                        </h4>
-                    </div>
-                    
-                </div>
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione fuga consectetur magnam voluptate assumenda?" data-price="$2" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-                <div class="product-div">
-                    <div>
-                        <img src="./image/iphone-3.jpg" alt="iphone" loading="lazy">
-                    </div>
-                    <div class="product-details">
-                        <h2>
-                          Iphone Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam qui optio quae omnis tenetur molestiae accusantium eius voluptate, distinctio perspiciatis!
-                        </h2>
-                        <div class="flex flex-row justify-between items-center mt-1">
-                          <p id="price">
-                           <span>Price:</span> $999
-                          </p>
-                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                        </div>
-                        <h4>
-                          <i class="fa-solid fa-star"></i>
-                          <span>4.7</span>
-                        </h4>
-                    </div>
-                    
-                </div>
+            <div class="product-card" data-title="Iphone Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$3" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-                <div class="product-div">
-                    <div>
-                        <img src="./image/iphone-4.jpg" alt="iphone" loading="lazy">
-                    </div>
-                    <div class="product-details">
-                        <h2>
-                          Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit animi in mollitia. Quis magnam praesentium suscipit perspiciatis eum laboriosam.
-                        </h2>
-                        <div class="flex flex-row justify-between items-center mt-1">
-                          <p id="price">
-                           <span>Price:</span> $999
-                          </p>
-                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                        </div>
-                        <h4>
-                          <i class="fa-solid fa-star"></i>
-                          <span>4.5</span>
-                        </h4>
-                    </div>
-                </div>
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$4" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-                <div class="product-div">
-                    <div>
-                        <img src="./image/ipad.jpg" alt="ipad" loading="lazy">
-                    </div>
-                    <div class="product-details">
-                        <h2>
-                          Ipad Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sit quis et ratione odio cupiditate ea earum laudantium recusandae alias?
-                        </h2>
-                        <div class="flex flex-row justify-between items-center mt-1">
-                          <p id="price">
-                           <span>Price:</span> $999
-                          </p>
-                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                        </div>
-                        <h4>
-                          <i class="fa-solid fa-star"></i>
-                          <span>3.9</span>
-                        </h4>
-                    </div>
-                </div>
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$5" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-                <div class="product-div">
-                    <div>
-                        <img src="./image/ipad-2.jpg" alt="ipad" loading="lazy">
-                    </div>
-                    <div class="product-details">
-                        <h2>
-                          Ipad 2 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia iste porro veniam delectus inventore vel labore neque repudiandae rem eveniet.
-                        </h2>
-                        <div class="flex flex-row justify-between items-center mt-1">
-                          <p id="price">
-                           <span>Price:</span> $999
-                          </p>
-                          <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                        </div>
-                        <h4>
-                          <i class="fa-solid fa-star"></i>
-                          <span>4.1</span>
-                        </h4>
-                    </div>
-                  </div>
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$6" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-                  <div class="product-div">
-                      <div>
-                          <img src="./image/ipad-3.jpg" alt="ipad" loading="lazy">
-                      </div>
-                      <div class="product-details">
-                          <h2>
-                            Ipad 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum earum ut, hic iste optio! Dignissimos reiciendis soluta est debitis!
-                          </h2>
-                          <div class="flex flex-row justify-between items-center mt-1">
-                            <p id="price">
-                             <span>Price:</span> $999
-                            </p>
-                            <i class="px-3 rounded py-1 border-2 border-gray-600 fa-regular fa-heart"></i>
-                          </div>
-                          <h4>
-                            <i class="fa-solid fa-star"></i>
-                            <span>3.5</span>
-                          </h4>
-                      </div>
-                  </div>
-                </div>
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$7" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
 
-            </div>
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$8" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$9" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$10" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$11" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$12" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$13" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$14" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$15" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$16" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$17" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$18" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$19" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$20" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$21" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$22" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$23" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$24" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$25" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$26" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$27" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$28" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$29" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$30" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$31" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$32" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="IphonIphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis rationee" data-price="$33" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$34" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$35" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$36" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$37" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$38" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$39" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$40" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$41" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$42" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$43" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$44" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$45" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$46" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$48" data-rating="4.9" data-image="./image/iphone-1.jpg"></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$49" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$50" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$51" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$52" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$53" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$54" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$55" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$56" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+
+            <div class="product-card" data-title="Iphone Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea esse minus accusamus velit perspiciatis ratione" data-price="$57" data-rating="4.9" data-image="./image/iphone-1.jpg" data-description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum consequatur commodi cupiditate quae quisquam totam obcaecati pariatur quam exercitationem est."></div>
+          </div>
+          <div class="text-center mt-2 md:mt-4 lg:mt-6 gap-2 md:gap-4 lg:gap-6 flex flex-row justify-center">
+            <button id="prevButton" class="shadow block text-white bg-slate-400 px-6 py-2 border-2 rounded" disabled>
+              Prev
+            </button>
+            <button id="nextButton" class="shadow block text-white bg-slate-400 px-6 py-2 border-2 rounded">
+              Next
+            </button>
+          </div>
         </div>
       </div>
-      <!-- </div> -->
+    </div>
     </main>
+    <div id="product-details-container" class="hidden w-[95%] md:w-[70%] lg:w-[50%] 2xl:w-[35%] h-[80vh] mx-auto mt-[80px] bg-red-50 rounded-t">
+      <div class="p-3 flex flex-col justify-center w-full">
+        <img id="image" src="" alt="" class="h-[400px] w-full object-cover">
+        <h1 id="product-title" class="mt-4 p-2 text-lg text-slate-900 font-semibold"></h1>
+        <p id="product-price" class="p-2 mt-2 text-[16px] font-medium">Price: </p>
+      <p id="product-rating" class="p-2 mt-2 font-medium"></p>
+        <p id="product-description" class="p-2 mt-2 text-[14px] lg:text-base"></p>
+       <div class="flex gap-2 lg:justify-center">
+        <h2 class="px-12 rounded py-1 border-2 border-gray-600 ">
+          Add to cart
+          <i class="fa-solid fa-cart-shopping"></i>
+        </h2>
+        <h2 class="px-3 rounded py-1 border-2 border-gray-600">
+          <i class="fa-regular fa-heart"></i>
+        </h2>
+       </div>
+        <button id="back-button" class="mt-4 px-4 py-2 bg-red-300 border-2 rounded shadow-lg text-white">Back</button>
+      </div>
+    </div>
+
 
     <script src="script.js" defer></script>
   </body>
