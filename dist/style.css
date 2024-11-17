@@ -449,6 +449,9 @@ li{
         margin-top: 0px;
         font-size: 16px;
     }
+#sideMenuItem li{
+        font-size: 12px
+    }
 #sideMenu ul li{
         margin-top: 0px;
         gap: 4px;
@@ -498,6 +501,17 @@ i{
         text-overflow: ellipsis;
         white-space: normal;
     }
+.details span{
+        height: 70%;
+        font-size:16px;
+        line-height: normal;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
 label{
         color:rgb(4, 24, 24);
         font-size: 16px;
@@ -525,11 +539,77 @@ label{
         -moz-column-gap: 1rem;
              column-gap: 1rem;
     }
+.cart-items-container {
+    display: block;
+    width: 100%;
+  }
+.cart-item .details,
+  .cart-item .quantity,
+  .cart-item .price {
+    flex-basis: 100%; /* Each section takes a full line */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+.cart-item {
+    width: 100%; /* Ensure each item takes up the full width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap:4px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Add margin to separate items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+.cart-item
+  
+  .cart-item .details {
+    display: flex;
+    align-items: center;
+    flex-basis:100%
+  }
+.cart-item .quantity,
+  .cart-item .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45%
+  }
+.cart-item .quantity button,
+  .cart-item .price p {
+    margin: 0 5px;
+  }
+button {
+    cursor: pointer;
+  }
+#backButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+@media (min-width:640px) {
+    .cart-item{
+        flex-direction:row;
+    }
+    .cart-item .details,
+    .cart-item .quantity,
+    .cart-item .price {
+    flex-basis: 100%; /* Each section takes a full line */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  }
 @media (min-width:768px) {
         .product-details h2{
             -webkit-line-clamp: 4; 
 
         }
+        #sideMenuItem li{
+            font-size: 14px
+        }
+      
     }
 @media (min-width:1024px) {
         .product-details h2{
@@ -582,9 +662,6 @@ label{
 }
 .top-0 {
   top: 0px;
-}
-.top-2 {
-  top: 0.5rem;
 }
 .top-\[40px\] {
   top: 40px;
@@ -642,14 +719,17 @@ label{
 .h-10 {
   height: 2.5rem;
 }
-.h-\[280px\] {
-  height: 280px;
+.h-\[290px\] {
+  height: 290px;
+}
+.h-\[380px\] {
+  height: 380px;
 }
 .h-\[50\%\] {
   height: 50%;
 }
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[70px\] {
+  height: 70px;
 }
 .h-auto {
   height: auto;
@@ -660,17 +740,20 @@ label{
 .h-screen {
   height: 100vh;
 }
-.h-\[\] {
-  height: ;
+.w-\[30\%\] {
+  width: 30%;
 }
-.h-\[400px\] {
-  height: 400px;
+.w-\[70px\] {
+  width: 70px;
 }
 .w-\[90\%\] {
   width: 90%;
 }
 .w-\[95\%\] {
   width: 95%;
+}
+.w-\[99\%\] {
+  width: 99%;
 }
 .w-auto {
   width: auto;
@@ -681,14 +764,21 @@ label{
 .w-screen {
   width: 100vw;
 }
-.basis-\[45\%\] {
-  flex-basis: 45%;
+.basis-\[33\%\] {
+  flex-basis: 33%;
+}
+.basis-\[47\%\] {
+  flex-basis: 47%;
 }
 .basis-full {
   flex-basis: 100%;
 }
 .translate-x-\[-50\%\] {
   --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.-rotate-180 {
+  --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .-rotate-90 {
@@ -818,10 +908,6 @@ label{
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
-.bg-slate-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 85 105 / var(--tw-bg-opacity));
-}
 .bg-slate-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(51 65 85 / var(--tw-bg-opacity));
@@ -865,6 +951,10 @@ label{
 .p-5 {
   padding: 1.25rem;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -901,10 +991,6 @@ label{
   padding-top: 1px;
   padding-bottom: 1px;
 }
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -928,8 +1014,20 @@ label{
 .text-\[12px\] {
   font-size: 12px;
 }
+.text-\[13px\] {
+  font-size: 13px;
+}
 .text-\[14px\] {
   font-size: 14px;
+}
+.text-\[16px\] {
+  font-size: 16px;
+}
+.text-\[20px\] {
+  font-size: 20px;
+}
+.text-\[24px\] {
+  font-size: 24px;
 }
 .text-base {
   font-size: 1rem;
@@ -946,9 +1044,6 @@ label{
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-\[16px\] {
-  font-size: 16px;
 }
 .font-bold {
   font-weight: 700;
@@ -995,17 +1090,21 @@ label{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
+.text-green-50 {
+  --tw-text-opacity: 1;
+  color: rgb(240 253 244 / var(--tw-text-opacity));
+}
 .text-green-800 {
   --tw-text-opacity: 1;
   color: rgb(22 101 52 / var(--tw-text-opacity));
 }
-.text-green-950 {
-  --tw-text-opacity: 1;
-  color: rgb(5 46 22 / var(--tw-text-opacity));
-}
 .text-neutral-500 {
   --tw-text-opacity: 1;
   color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 .text-red-950 {
   --tw-text-opacity: 1;
@@ -1019,9 +1118,17 @@ label{
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
+.text-slate-700 {
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
 .text-slate-900 {
   --tw-text-opacity: 1;
   color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+.text-teal-950 {
+  --tw-text-opacity: 1;
+  color: rgb(4 47 46 / var(--tw-text-opacity));
 }
 .text-white {
   --tw-text-opacity: 1;
@@ -1030,17 +1137,6 @@ label{
 .text-yellow-50 {
   --tw-text-opacity: 1;
   color: rgb(254 252 232 / var(--tw-text-opacity));
-}
-.text-\[\] {
-  color: ;
-}
-.text-red-900 {
-  --tw-text-opacity: 1;
-  color: rgb(127 29 29 / var(--tw-text-opacity));
-}
-.text-green-900 {
-  --tw-text-opacity: 1;
-  color: rgb(20 83 45 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -1058,6 +1154,11 @@ label{
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .outline-none {
@@ -1133,6 +1234,9 @@ label{
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+  .md\:text-\[15px\] {
+    font-size: 15px;
   }
   .md\:text-\[16px\] {
     font-size: 16px;
@@ -1229,11 +1333,17 @@ label{
   .lg\:w-\[16\.6\%\] {
     width: 16.6%;
   }
-  .lg\:w-\[30\%\] {
-    width: 30%;
-  }
   .lg\:w-\[50\%\] {
     width: 50%;
+  }
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+  .lg\:w-\[90\%\] {
+    width: 90%;
   }
   .lg\:w-auto {
     width: auto;
@@ -1304,6 +1414,9 @@ label{
   .lg\:p-0 {
     padding: 0px;
   }
+  .lg\:p-2 {
+    padding: 0.5rem;
+  }
   .lg\:p-4 {
     padding: 1rem;
   }
@@ -1323,6 +1436,10 @@ label{
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
   .lg\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -1330,10 +1447,6 @@ label{
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-  .lg\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
   .lg\:text-gray-600 {
     --tw-text-opacity: 1;
@@ -1368,11 +1481,11 @@ label{
   .\32xl\:w-\[35\%\] {
     width: 35%;
   }
-  .\32xl\:w-\[\] {
-    width: ;
+  .\32xl\:w-\[50\%\] {
+    width: 50%;
   }
-  .\32xl\:w-\[30\%\] {
-    width: 30%;
+  .\32xl\:w-\[70\%\] {
+    width: 70%;
   }
   .\32xl\:basis-\[14\%\] {
     flex-basis: 14%;

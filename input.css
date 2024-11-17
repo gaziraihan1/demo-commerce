@@ -20,6 +20,9 @@
         margin-top: 0px;
         font-size: 16px;
     }
+    #sideMenuItem li{
+        font-size: 12px
+    }
     #sideMenu ul li{
         margin-top: 0px;
         gap: 4px;
@@ -71,6 +74,17 @@
         white-space: normal;
     }
 
+    .details span{
+        height: 70%;
+        font-size:16px;
+        line-height: normal;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
     label{
         color:rgb(4, 24, 24);
         font-size: 16px;
@@ -97,11 +111,85 @@
         width: 100%;
         column-gap: 1rem;
     }
+
+.cart-items-container {
+    display: block;
+    width: 100%;
+  }
+  .cart-item .details,
+  .cart-item .quantity,
+  .cart-item .price {
+    flex-basis: 100%; /* Each section takes a full line */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  
+  .cart-item {
+    width: 100%; /* Ensure each item takes up the full width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    gap:4px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px; /* Add margin to separate items */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .cart-item
+  
+  .cart-item .details {
+    display: flex;
+    align-items: center;
+    flex-basis:100%
+  }
+  
+  .cart-item .quantity,
+  .cart-item .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45%
+  }
+  
+  .cart-item .quantity button,
+  .cart-item .price p {
+    margin: 0 5px;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #backButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  @media (min-width:640px) {
+    .cart-item{
+        flex-direction:row;
+    }
+    .cart-item .details,
+    .cart-item .quantity,
+    .cart-item .price {
+    flex-basis: 100%; /* Each section takes a full line */
+    margin-bottom: 10px; /* Add margin for spacing */
+  }
+  }
     @media (min-width:768px) {
         .product-details h2{
             -webkit-line-clamp: 4; 
 
         }
+        #sideMenuItem li{
+            font-size: 14px
+        }
+      
     }
     @media (min-width:1024px) {
         .product-details h2{
