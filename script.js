@@ -1,4 +1,4 @@
-//For the navbar
+let footer = document.getElementById("footer");
 let menuBar = document.querySelector("#menuBar");
 let closeMenu = document.querySelector("#closeMenu");
 let menuContainer = document.querySelector("#menuContainer");
@@ -133,7 +133,6 @@ document.addEventListener('click', () => {
 
 
 
-
 //For managing the max content in the page
 const allContents = Array.from(document.querySelectorAll('.product-card'));
 const container = document.getElementById("content-container");
@@ -217,7 +216,7 @@ document.querySelectorAll('.product-card').forEach(card => {
     scrollPosition = window.scrollY;
   
     mainContainer.style.display = 'none';
-  
+    footer.style.display = 'none';
   
     productDetailsContainer.style.display = 'block';
   
@@ -234,6 +233,7 @@ document.querySelectorAll('.product-card').forEach(card => {
 backButton.addEventListener('click', () => {
   productDetailsContainer.style.display = 'none';
   header.style.display = 'block';
+  footer.style.display = 'block';
   mainContainer.style.display = 'flex'; 
   window.scrollTo(0, scrollPosition);
 });
@@ -291,7 +291,6 @@ addToCartButton.addEventListener('click', () => {
   const title = productTitle.textContent;
   const price = parseFloat(productPrice.textContent.replace('Price: $', ''));
   const rating = productRating.textContent.replace('Rating: ', '');
-  
   const dataId = productTitle.textContent; // or another unique identifier
 
   const existingItemIndex = cart.findIndex(item => item.dataId === dataId);
@@ -337,16 +336,17 @@ cartPageBtn.forEach(button => {
     mainContainer.style.display = 'none';
     header.style.display = 'none';
     cartPage.style.display = 'block';
+    footer.style.display = 'none'
     renderCartPage(); 
     evaluateCart();
   });
 });
 
-
 const backMainPage = document.getElementById("backButton");
 backMainPage.addEventListener('click', () => {
   document.querySelector("main").style.display = 'flex';
   header.style.display = 'block';
+  footer.style.display = 'block';
   cartPage.style.display = 'none';
   window.scrollTo(0, 0); 
 });
@@ -391,7 +391,45 @@ cartAdd.forEach(add => {
 
     setTimeout(() => {
       add.innerHTML = originalText;
-    }, 2000);
+    }, 1000);
   })
 });
 evaluateCart();
+
+
+
+
+
+
+//Our details
+document.querySelectorAll(".ourDetails").forEach(details => {
+  let getDataMain = details.getAttribute("data-main");
+  let getDataDetails = details.getAttribute("data-details");
+  let getLink = details.getAttribute("data-link");
+
+  details.classList.add("sm:basis-[40%]","p-2", "md:basis-[32%]","lg:basis-[30%]", "shadow-lg","rounded");
+  details.innerHTML = `
+  <h1 class="p-2 text-center text-xl font-medium text-gray-400">
+                ${getDataMain}
+              </h1> <hr>
+              <p class="p-2 text-gray-400">
+                ${getDataDetails}
+              </p>
+              <p class="p-2 text-red-900 text-center">
+                More of us <a class="text-blue-900 underline font-medium" href="${getLink}">Check here</a>
+              </p>
+  `
+})
+
+// //loader for loading the page
+// window.addEventListener('load', () => {
+//   const loader = document.getElementById('loader');
+//   const mainContent = document.getElementById('main-content');
+  
+//   // Hide the loader
+//   loader.style.display = 'none';
+  
+//   // Show the main content
+//   mainContent.style.display = 'block';
+// });
+

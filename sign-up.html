@@ -48,13 +48,15 @@
                          <label for="number">Number</label> <br>
                          <input type="tel" name="number" id="number" required>
                      </div>
-                     <div>
+                     <div class="relative">
                          <label for="password">Password</label> <br>
-                         <input type="password" name="password" id="password" required>
+                         <input type="password" name="password" id="password1" required>
+                         <button class="toggleIcon absolute right-[10px] top-[24px] p-2">👁️</button>
                      </div>
-                     <div>
+                     <div class="relative">
                          <label for="password">Confirm password</label> <br>
-                         <input type="password" name="password" id="password" required>
+                         <input type="password" name="password" id="password2" required>
+                         <button class="toggleIcon absolute right-[10px] top-[24px] p-2">👁️</button>
                      </div>
                          <label for="checkbox"></label>
                          <input class="p-2" type="checkbox" name="checkbox" id="checkbox" required>
@@ -84,5 +86,26 @@
     </div> 
 
 
+    <script>
+    const passwordInputs = document.querySelectorAll('input[type="password"]');
+    const toggleIcons = document.querySelectorAll('.toggleIcon');
+
+    // Add event listeners to each toggle icon
+    toggleIcons.forEach((toggle, index) => {
+        toggle.addEventListener('click', () => {
+            // Access the corresponding password input
+            const passwordInput = passwordInputs[index];
+
+            // Toggle input type between 'password' and 'text'
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggle.textContent = '🙈'; // Change icon to represent "hide"
+            } else {
+                passwordInput.type = 'password';
+                toggle.textContent = '👁️'; // Change icon to represent "show"
+            }
+        });
+    });
+    </script>
 </body>
 </html>

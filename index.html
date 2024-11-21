@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css" />
   </head>
-  <body class="h-auto w-auto">
+  <body class="h-auto w-auto bg-red-50">
     <!-- Header section -->
     <header class=" fixed lg:h-[60px] w-screen  lg:fixed top-0 z-[100]">
       
@@ -121,7 +121,38 @@
             </div>
           </div>
         </div>
-
+          <!-- Our details -->
+          <div
+          class="h-auto w-full md:w-[95%] lg:w-full p-4 mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1 px-2 md:p-4 mt-8"
+        >
+          <div
+            class="p-4 flex flex-col sm:flex-row gap-4 flex-wrap bg-slate-600 justify-center 2xl:justify-between rounded"
+          >
+            <h1
+              class="sm:basis-[100%] text-center text-2xl text-blue-950 font-semibold"
+            >
+              Here's an overview of us.
+            </h1>
+            <div
+              class="ourDetails"
+              data-main="What we offer?"
+              data-details="We offer a diverse range of digital products, including mobile phones and accessories, ensuring quality, convenience, and top-notch customer service to enhance your tech experience and meet all your digital needs."
+              data-link="#"
+            ></div>
+            <div
+              class="ourDetails"
+              data-main="About our services?"
+              data-details="Our online eCommerce platform delivers exceptional service, offering fast and secure digital product purchases. We prioritize customer satisfaction with user-friendly navigation, reliable support, and seamless shopping experiences tailored to your needs."
+              data-link="#"
+            ></div>
+            <div
+              class="ourDetails"
+              data-main="What you for us?"
+              data-details="Our users are our top priority. We strive to provide a seamless shopping experience, exceptional service, and high-quality digital products, ensuring customer satisfaction and building lasting relationships through trust and innovation."
+              data-link="#"
+            ></div>
+          </div>
+        </div>
         <!-- SideMenu -->
         <div class="w-full text-slate-700 lg:border-r-[1px] lg:bg-slate-200 lg:border-gray-300 lg:text-slate-700 lg:w-[16.6%] 2xl:w-[10%] my-8 lg:fixed lg:top-[60px] lg:left-0 lg:row-start-1 lg:-row-end-1 lg:col-start-0 lg:col-end-3 2xl:col-start-1 2xl:col-end-2 lg:my-0 lg:h-screen">
           <div class="text-center w-full lg:w-[100%]">
@@ -211,11 +242,7 @@
                   Wishlist
                 </button>
               </li>
-              <li>
-                <button class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full text-[14px] md:text-[16px]">
-                  Cart list
-                </button>
-              </li>
+              
               <li>
                 <button class="text-left transition-all duration-300 lg:hover:bg-slate-300 p-2 w-full text-[14px] md:text-[16px]">
                   My order
@@ -386,6 +413,53 @@
             </button>
           </div>
         </div>
+         <!-- Form -->
+         <div
+         class="h-auto w-full md:w-[95%] lg:w-full p-4 mx-auto lg:col-start-3 2xl:col-start-2 lg:-col-end-1 px-2 md:p-4 mt-8 bg-slate-400"
+       >
+         <h1 class="text-center text-lg font-mono font-semibold">
+           Do you have any query or complaints?
+         </h1>
+         <p class="text-center">You have an option to share 🧐</p>
+         <div class="h-auto flex justify-center mt-2">
+           <form action="https://formspree.io/f/xwpkqvvn" method="POST">
+             <label class="text-[15px]" for="name">Your name: </label> <br />
+             <input
+               class="border-2 rounded"
+               type="text"
+               id="name"
+               name="name"
+             />
+             <br />
+             <label class="mt-2 text-[15px]" for="emial"> Your email:</label>
+             <br />
+             <input
+               class="border-2 rounded"
+               type="email"
+               name="email"
+               id="email"
+             />
+             <br />
+             <label class="mt-2 text-[15px]" for="textarea"
+               >Your quiry or problems!</label
+             >
+             <br />
+             <textarea
+               class="border-2 rounded"
+               name="textarea"
+               id="textarea"
+               row
+             ></textarea>
+             <br />
+             <button
+               class="px-4 py-2 text-center w-full bg-blue-800 rounded text-white"
+             >
+               Submit
+             </button>
+           </form>
+         </div>
+       </div>
+       
       </div>
 
     </main>
@@ -446,7 +520,154 @@
 
   <!-- Back Button -->
 </div>
-
+<footer id="footer" class="lg:grid lg:grid-cols-12 2xl:grid-cols-10 bg-slate-900 mt-28 text-white">
+  <div class="footer-main-div flex flex-col text-center sm:flex-row flex-wrap col-start-3 2xl:col-start-2 -col-end-1 sm:justify-between p-14 gap-2">
+    <div class="sm:basis-[45%] md:basis-[32%] xl:basis-[24%]">
+      <h1>
+      About us
+    </h1>
+    <ul>
+      <li>
+        <a href="">
+          Our story
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Affiliate Program
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Wholesale Program
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Price Inquiries
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Careers
+        </a>
+      </li>
+    </ul>
+  </div>
+    <div class="sm:basis-[45%] md:basis-[32%] xl:basis-[24%]">
+      <h1>
+        Customer Support
+      </h1>
+      <ul>
+        <li>
+          <a href="">
+            Return & Exchanges
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Shipping Information
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Track Your Order
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Promo Code Lockup
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Gift Card Lockup
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sm:basis-[45%] md:basis-[32%] xl:basis-[24%]">
+      <h1>
+        More
+      </h1>
+      <ul>
+        <li>
+          <a href="">
+            Earn Rewards
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Payment Plans
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Retail Store Locator
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Help Center
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sm:basis-[45%] md:basis-[100%] xl:basis-[24%] md:justify-center lg:justify-normal">
+      <h1 class="md:text-center xl:text-left">
+        Connect With Us
+      </h1>
+      <ul class="flex justify-center sm:justify-normal md:justify-center 2xl:justify-normal">
+        <li class="py-2 pr-2">
+          <a href="">
+            <img width="24" height="24" src="./image/facebook (1).png" alt="">
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="">
+            <img width="24" height="24" src="./image/instagram (2).png" alt="">
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="">
+        <img width="24" height="24" src="./image/linkedin (1).png" alt=""></a>
+        </li>
+        <li class="p-2">
+          <a href="">
+            <img width="24" height="24" src="./image/social.png" alt="">
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="">
+            <img width="24" height="24" src="./image/twitter (1).png" alt="">
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="">
+            <img width="24" height="24" src="./image/tik-tok.png" alt="">
+          </a>
+        </li>
+        <li class="p-2">
+          <a href="">
+            <img width="24" height="24" src="./image/telegram (1).png" alt="">
+          </a>
+        </li>
+      </ul>
+      <p class="para-footer text-[14px] pt-3 text-center sm:text-left md:text-center xl:text-left">
+        Want $20 off? Sign up for our Newsletter. <br>
+        Sign up for SMS alerts and be the first to know.
+      </p>
+      <button class="mt-4 bg-red-500 py-2 px-8 text-left">
+        Get in loop
+      </button>
+    </div>
+  </div>
+</footer>
  
     <script src="script.js" defer></script>
   </body>

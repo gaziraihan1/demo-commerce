@@ -26,7 +26,7 @@
 </head>
 <body class="w-screen h-screen bg-slate-200">
     <span><a href="index.html" class="mt-2 text-[12px] bg-slate-400 text-blue-700 p-2 rounded-2xl">Main page<i class="fa-solid fa-turn-up"></i></a></span>
-    <div class="h-full w-[95%] md:w-[75%] lg:w-[50%] 2xl:w-[35%] mx-auto flex flex-col justify-center items-center">
+    <div class="mt-12 h-full w-[95%] md:w-[75%] lg:w-[50%] 2xl:w-[35%] mx-auto flex flex-col justify-center items-center">
         <div class="w-[90%] mx-auto bg-slate-400 p-4 rounded">
             <div class="p-4">
                 <h1 class="text-3xl font-bold text-emerald-700">Sign in</h1>
@@ -40,17 +40,18 @@
                         <label for="email">Email address</label> <br>
                         <input type="email" name="email" id="email" required>
                     </div>
-                    <div>
+                    <div class="relative">
                         <label for="password">Enter password</label> <br>
                         <input type="password" name="password" id="password" required>
+                        <button id="toggleIcon" class="absolute right-[10px] top-[24px] p-2">👁️</button>
                     </div>
                     <label for="checkbox"></label>
-                    <input class="p-2" type="checkbox" name="checkbox" id="checkbox" required>
+                    <input class="p-2" type="checkbox" name="checkbox" id="checkbox">
                     <span class="text-[14px] md:text-[16px] text-blue-600">
                         Remember me
                     </span> <br>
                     <div>
-                        <button role="submit" class="w-full block rounded-[40px] py-3 bg-fuchsia-700 text-slate-200">Sign in</button>
+                        <button id="signin" role="submit" class="w-full block rounded-[40px] py-3 bg-fuchsia-700 text-slate-200">Sign in</button>
                     </div>
                 </form>
             </div>
@@ -64,5 +65,33 @@
     </div> 
 
 
+    <script>
+        let signIn = document.getElementById("signin");
+
+signIn.addEventListener("click", () => {
+  let originalText = signIn.innerHTML;
+  signIn.innerHTML = `Logged in`;
+  setTimeout(() => {
+    signIn.innerHTML = originalText;
+  }, 2000);
+  console.log(signIn.innerText);
+})
+
+
+const passwordInput = document.getElementById('password');
+        const toggleIcon = document.getElementById('toggleIcon');
+
+        // Add an event listener to toggle the visibility
+        toggleIcon.addEventListener('click', () => {
+            // Toggle the input type between 'password' and 'text'
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.textContent = '🙈'; // Change icon to represent "hide"
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.textContent = '👁️'; // Change icon to represent "show"
+            }
+        });
+    </script>
 </body>
 </html>
