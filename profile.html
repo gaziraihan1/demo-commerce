@@ -12,10 +12,57 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Faculty+Glyphic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/style.css" />
 </head>
-<body class="profile">
-    <div>
-        <div>
-            div
+<body class="profile w-screen h-screen flex items-center justify-center bg-red-50">
+    <div class="flex flex-col gap-4 bg-blue-100 p-8">
+        <h1 class="uppercase text-[18px] font-semibold">Personal information</h1>
+        <div class="w-full flex flex-col p-4 gap-4">
+            <div class="relative">
+                <h2 class="text-[15px]">
+                    Your profile photo
+                </h2>
+                <p class="bg-green-100 w-[100px] h-[100px] rounded-full">
+
+                </p> 
+                <img id="selectImage" class="cursor-pointer absolute bottom-2 right-[110px]" width="22" height="22" src="./image/user-avatar.png" alt="">
+            </div> <hr>
+            <div>
+                <h3>
+                    Name
+                </h3>
+                <input type="text" class="border p-2 outline-none bg-red-50 my-1">
+                <p>
+                    Email
+                </p>
+                <input type="email" class="border p-2 outline-none bg-red-50 my-1">
+                <p>
+                    Password
+                </p>
+                <input type="password" class="border p-2 outline-none bg-red-50 my-1">
+                <p class="mt-2">
+                    <a class="text-blue-700 underline" href="">Change password</a>
+                </p>
+
+            </div>
+            <hr>
+            <div>
+                <h1 class="uppercase text-[18px] font-semibold">
+                    More
+                </h1>
+                <ul>
+                    <li>
+                        <a class="font-medium text-[13px] hover:underline transition-all" href="">Billing address</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="">Your orders</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="">Your cart</a>
+                    </li>
+                    <li>
+                        <a class="hover:underline transition-all" href="">Your wishlist</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>

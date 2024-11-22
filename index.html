@@ -27,7 +27,7 @@
             </button>
 
           </div>
-          <div class="cursor-pointer py-2 px-4 mr-2">
+          <div class="cursor-pointer py-1 px-4 mr-2">
             <i
               id="menuBar"
               class="text-slate-300 text-2xl fa-solid fa-bars"
@@ -51,7 +51,7 @@
           <ul class="w-full flex flex-col items-center justify-between lg:flex-row-reverse lg:justify-normal lg:p-0 lg:gap-6 lg:mr-8 lg:w-10/12 lg:mx-auto lg:h-full lg:text-xl">
             <li class="flex gap-2 bg-green-800 items-center lg:p-2">
               <i class="text-center text-gray-100 py-1 fa-solid fa-user md:py-0"></i>
-              <a href="" class="font-semibold text-white"> Profile </a>
+              <a href="profile.html" class="font-semibold text-white"> Profile </a>
             </li>
            
             <li class="lg:h-full lg:p-4">
@@ -75,6 +75,9 @@
         </div>
       </nav>
     </header>
+    <div id="loader">
+      <div class="spinner"></div>
+  </div>
     <main class="lg:mt-[60px] mt-[76px] bg-red-50">
       
       <div class="relative lg:position-static  lg:grid grid-cols-12 2xl:grid 2xl:grid-cols-10 grid-rows-[auto auto auto auto]">
@@ -520,6 +523,8 @@
 
   <!-- Back Button -->
 </div>
+
+<!-- Footer section -->
 <footer id="footer" class="lg:grid lg:grid-cols-12 2xl:grid-cols-10 bg-slate-900 mt-28 text-white">
   <div class="footer-main-div flex flex-col text-center sm:flex-row flex-wrap col-start-3 2xl:col-start-2 -col-end-1 sm:justify-between p-14 gap-2">
     <div class="sm:basis-[45%] md:basis-[32%] xl:basis-[24%]">
@@ -662,7 +667,8 @@
         Want $20 off? Sign up for our Newsletter. <br>
         Sign up for SMS alerts and be the first to know.
       </p>
-      <button class="mt-4 bg-red-500 py-2 px-8 text-left">
+      <button class="mt-4 bg-red-500 py-2 px-8 text-left sm:block md:inline  xl:block ">
+        <img class="inline pr-2" src="./image/gmail.png" alt="">
         Get in loop
       </button>
     </div>

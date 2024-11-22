@@ -412,7 +412,7 @@ document.querySelectorAll(".ourDetails").forEach(details => {
   <h1 class="p-2 text-center text-xl font-medium text-gray-400">
                 ${getDataMain}
               </h1> <hr>
-              <p class="p-2 text-gray-400">
+              <p class="p-2 text-gray-300">
                 ${getDataDetails}
               </p>
               <p class="p-2 text-red-900 text-center">
@@ -421,15 +421,15 @@ document.querySelectorAll(".ourDetails").forEach(details => {
   `
 })
 
-// //loader for loading the page
-// window.addEventListener('load', () => {
-//   const loader = document.getElementById('loader');
-//   const mainContent = document.getElementById('main-content');
+//loader for loading the page
+window.addEventListener('load', () => {
+  const loader = document.getElementById('loader');
+  const mainContent = document.getElementById('main-content');
   
-//   // Hide the loader
-//   loader.style.display = 'none';
+  // Hide the loader
+  loader.style.display = 'none';
   
-//   // Show the main content
-//   mainContent.style.display = 'block';
-// });
+  // Show the main content
+  mainContent.style.display = 'block';
+});
 
