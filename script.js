@@ -415,7 +415,7 @@ document.querySelectorAll(".ourDetails").forEach(details => {
               <p class="p-2 text-gray-300">
                 ${getDataDetails}
               </p>
-              <p class="p-2 text-red-900 text-center">
+              <p class="p-2 text-white text-center">
                 More of us <a class="text-blue-900 underline font-medium" href="${getLink}">Check here</a>
               </p>
   `
@@ -432,4 +432,3 @@ window.addEventListener('load', () => {
   // Show the main content
   mainContent.style.display = 'block';
 });
-

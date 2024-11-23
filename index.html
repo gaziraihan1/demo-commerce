@@ -78,7 +78,7 @@
     <div id="loader">
       <div class="spinner"></div>
   </div>
-    <main class="lg:mt-[60px] mt-[76px] bg-red-50">
+    <main id="mainSection" class="lg:mt-[60px] mt-[76px] bg-red-50">
       
       <div class="relative lg:position-static  lg:grid grid-cols-12 2xl:grid 2xl:grid-cols-10 grid-rows-[auto auto auto auto]">
         <div id="searchBar" class="fixed top-[40px] w-full lg:top-[60px] hidden z-[10] lg:col-start-1 lg:-col-end-1 bg-gray-100">
@@ -100,7 +100,7 @@
             </span>
           </div>
           <div class="lg:basis-3/6 mt-6">
-            <h2 class="text-center text-xl">We are here to serve you</h2>
+            <h2 class="text-center text-3xl p-2 text-gray-700">We are here to serve you</h2>
             <h3 class="text-center text-neutral-500">
               Search your favourite execories or foods
             </h3>
@@ -490,39 +490,39 @@
 
 
 <!-- Cart items page -->
-<div id="cartSection" class="hidden h-auto w-[95%] md:w-[75%] lg:w-[60%] 2xl:w-[50%] mx-auto mt-[80px] bg-red-50 rounded-t shadow-lg">
-  <button id="backButton">
-    <i id="sideArrow" class="-rotate-180 fa-solid fa-arrow-right"></i>
-  </button>
-  <div>
-    <h1 class="text-center text-[24px] p-4 text-teal-950">
-      Check and review your cart
-    </h1>
-    <div class="lg:w-[90%] mx-auto flex justify-center p-2 text-center">
-      <h2 class="basis-[33%]">Details</h2>
-      <h2 class="basis-[33%]">Quantity</h2>
-      <h2 class="basis-[33%]">Total</h2>
-    </div>
-    
-    <!-- Cart items container (flex container) -->
-    <div class="cart-items-container lg:w-[90%] mx-auto p-2 flex flex-wrap gap-4">
-      <!-- Cart items will be dynamically injected here by JavaScript -->
-    </div>
-    
-  </div>
-  <div id="cartSummary" class="flex flex-row lg:w-[90%] mx-auto p-2 gap-4 justify-center">
-    
-  </div>
-  
-  <!-- Proceed to payment section -->
-  <div class="mt-8 w-[90%] md:w-[75%] lg:w-[80%] 2xl:w-[70%] h-auto mx-auto bg-red-50 rounded-t">
-    <h1 class="text-center text-[24px]">
-      Proceed to the payment
-    </h1>
-  </div>
+    <div id="cartSection" class="hidden h-auto w-[95%] md:w-[75%] lg:w-[60%] 2xl:w-[50%] mx-auto mt-[80px] bg-red-50 rounded-t shadow-lg">
+      <button id="backButton">
+        <i id="sideArrow" class="-rotate-180 fa-solid fa-arrow-right"></i>
+      </button>
+      <div>
+        <h1 class="text-center text-[24px] p-4 text-teal-950">
+          Check and review your cart
+        </h1>
+        <div class="lg:w-[90%] mx-auto flex justify-center p-2 text-center">
+          <h2 class="basis-[33%]">Details</h2>
+          <h2 class="basis-[33%]">Quantity</h2>
+          <h2 class="basis-[33%]">Total</h2>
+        </div>
+        
+        <!-- Cart items container (flex container) -->
+        <div class="cart-items-container lg:w-[90%] mx-auto p-2 flex flex-wrap gap-4">
+          <!-- Cart items will be dynamically injected here by JavaScript -->
+        </div>
+        
+      </div>
+      <div id="cartSummary" class="flex flex-row lg:w-[90%] mx-auto p-2 gap-4 justify-center">
+        
+      </div>
+      
+      <!-- Proceed to payment section -->
+      <div class="mt-8 w-[90%] md:w-[75%] lg:w-[80%] 2xl:w-[70%] h-auto mx-auto bg-red-50 rounded-t">
+        <h1 class="text-center text-[24px]">
+          Proceed to the payment
+        </h1>
+      </div>
 
-  <!-- Back Button -->
-</div>
+      <!-- Back Button -->
+    </div>
 
 <!-- Footer section -->
 <footer id="footer" class="lg:grid lg:grid-cols-12 2xl:grid-cols-10 bg-slate-900 mt-28 text-white">

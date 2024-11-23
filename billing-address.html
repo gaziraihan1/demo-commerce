@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Address</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHqT3bKDoVvIFJrnN+Hp3Ln1+NcQRR9kxw3a3HILtPRfoCbvPE/Jl6snfov/9pWJ7HdLhv2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./dist/style.css">
+</head>
+<body class="h-screen w-screen flex flex-col justify-center items-center ">
+    <div class="p-6 flex flex-col justify-center items-center">
+
+        <h1 class="uppercase text-2xl font-semibold text-slate-800">Your Billing Address</h1>
+        <div class="p-2 mt-2 lg:w-4/6 xl:w-3/6 2xl:w-[40%]">
+            <form action="" class="flex flex-col gap-4 p-4 sm:flex-row sm:flex-wrap justify-center">
+                <!-- Full Name -->
+                <div class="sm:basis-[45%] 2xl:basis-[45%]">
+                    <label for="fullName" class="text-green-900 font-mono font-semibold">Your Fullname:</label>
+                    <input type="text" name="fullName" id="fullName" class="text-slate-600 font-mono font-medium block outline-none px-2 py-1 border-2 border-slate-900 rounded w-full">
+                </div>
+    
+                <!-- Mobile Number -->
+                <div class="sm:basis-[45%] 2xl:basis-[45%]">
+                    <label for="number" class="text-green-900 font-mono font-semibold">Mobile Number:</label>
+                    <input type="number" name="number" id="number" class="text-slate-600 font-mono font-medium block outline-none px-2 py-1 border-2 border-slate-900 rounded w-full">
+                </div>
+    
+                <!-- Division -->
+                <div class="sm:basis-[45%] 2xl:basis-[45%]">
+                    <label for="division" class="text-green-900 font-mono font-semibold">Select Division:</label>
+                    <select name="division" id="division" class="text-slate-600 font-mono font-medium block outline-none px-2 py-1 border-2 border-slate-900 rounded w-full">
+                        <option value="">-Select Division-</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Sylhet">Sylhet</option>
+                    </select>
+                </div>
+    
+                <!-- District -->
+                <div class="sm:basis-[45%] 2xl:basis-[45%]">
+                    <label for="district" class="text-green-900 font-mono font-semibold">Select District:</label>
+                    <select name="district" id="district" class="text-slate-600 font-mono font-medium hidden outline-none px-2 py-1 border-2 border-slate-900 rounded w-full">
+                        <!-- Districts will be dynamically populated -->
+                    </select>
+                </div>
+    
+                <!-- Full Address -->
+                <div class="sm:basis-[94%] 2xl:basis-[92%]">
+                    <h3 class="text-green-900 font-mono font-semibold">Enter Full Address:</h3>
+                    <textarea class="text-slate-600 font-mono block outline-none px-2 py-1 border-2 border-slate-900 rounded h-auto w-full resize-none" name="" id="" rows="3" cols="10"></textarea>
+                </div>
+                <div class="sm:basis-[94%] 2xl:basis-[92%] w-full">
+                    <button class="w-full bg-blue-800 py-2 px-3 text-white font-bold font-mono">Save</button>
+                </div>
+                <div>
+                    <p class="font-serif text-center">
+                        <a class="text-violet-700 underline" href="">Change</a> or <a class="text-violet-700 underline" href="">Add address</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="billing-address.js"></script>
+</body>
+</html>
