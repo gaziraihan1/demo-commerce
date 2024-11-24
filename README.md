@@ -1,6 +1,7 @@
 It's a simple free demo project that i make to tracked my learning about HTML, CSS, Tailwindcss and JS.
 
 This project have just few feature, and what's these?
+
  -Responsive design (all device friendly UI)
  -Profile section with very less feature (Would be added by client requirements)
  -Product section (Where product can be added)
@@ -10,6 +11,7 @@ This project have just few feature, and what's these?
  -Sign-up and sign-in page
 
 Additional feature
+
  -Webpage get reload till the full page refresh
  -In the menu there is arrow button that up & down and right & left
 
