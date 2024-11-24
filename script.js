@@ -416,10 +416,12 @@ document.querySelectorAll(".ourDetails").forEach(details => {
                 ${getDataDetails}
               </p>
               <p class="p-2 text-white text-center">
-                More of us <a class="text-blue-900 underline font-medium" href="${getLink}">Check here</a>
+                More of us <a class="text-blue-800 underline font-medium" href="${getLink}">Check here</a>
               </p>
   `
 })
+
+
 
 //loader for loading the page
 window.addEventListener('load', () => {
